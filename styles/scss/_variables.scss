@@ -1,1 +1,34 @@
+// Colors
 
+$clr-100: #fff;
+$clr-150: #ffffff72;
+$clr-300: #bcbcbc;
+$clr-400: #1c2023bf;
+$clr-500: #19191979;
+
+// Backgrounds
+
+$page-bg-img: url("../../images/bg.jpg");
+$page-bg-overlay: url("../../images/bg-overlay.png");
+$page-bg-dark: $clr-500;
+$tab-bg-color: $clr-400;
+
+// Fonts
+
+$font-global-color: $clr-100;
+$link-hover-color: $clr-300;
+
+$font-family-global: "Nunito Sans", sans-serif;
+
+// Buttons
+
+$button-hover-color: $clr-150;
+
+// Layout
+
+$padding-inline-global: 1rem;
+
+// Other
+
+$border-global-color: $clr-100;
+$border-global: 1px solid $clr-100;

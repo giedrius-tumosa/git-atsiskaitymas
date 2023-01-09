@@ -1,4 +1,4 @@
-const tabData = [
+export const tabData = [
   {
     title: "intro",
     mediaUrl: "../images/tab-1.mp4",

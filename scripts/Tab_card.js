@@ -17,9 +17,10 @@ export default class Tab_card {
     card.append(cardHeader, cardMain);
 
     // Header elements
+    const cardTitle = document.createElement("h2");
+    cardTitle.setAttribute("class", "cardTitle");
+
     if (this.props.title) {
-      const cardTitle = document.createElement("h2");
-      cardTitle.setAttribute("class", "cardTitle");
       const text = document.createTextNode(this.props.title);
       cardTitle.append(text);
     }
@@ -27,7 +28,7 @@ export default class Tab_card {
     const cardExitButton = document.createElement("div");
     cardExitButton.setAttribute("class", "cardExitButton");
 
-    const img = document.createElement("img");
+    let img = document.createElement("img");
     img.setAttribute("src", "../images/xmark-solid.svg");
     img.setAttribute("alt", "Exit button image.");
     img.setAttribute("width", "30");
@@ -52,10 +53,10 @@ export default class Tab_card {
       if (this.props.mediaType === "video") {
         media = document.createElement("video");
         media.setAttribute("class", "cardMedia");
-        const source = document.createElement(source);
+        const source = document.createElement("source");
         source.setAttribute("src", this.props.mediaUrl);
         source.setAttribute("type", "video/mp4");
-        text = createTextNode("Your browser does not support the video.");
+        const text = document.createTextNode("Your browser does not support the video.");
         media.append(text);
       }
       cardMain.append(media);
@@ -64,7 +65,7 @@ export default class Tab_card {
     if (this.props.description) {
       const cardDescription = document.createElement("Description");
       cardDescription.setAttribute("class", "cardDescription");
-      text = document.createTextNode(this.props.description);
+      const text = document.createTextNode(this.props.description);
       cardDescription.append(text);
       cardMain.append(cardDescription);
     }
@@ -73,7 +74,10 @@ export default class Tab_card {
 
     // Exit button event
 
-    // PABAIGTI
+    cardExitButton.addEventListener("click", () => {
+      const modal = document.querySelector(".modal-background");
+      modal.remove();
+    });
 
     // Return
     return card;

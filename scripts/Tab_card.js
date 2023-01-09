@@ -49,6 +49,7 @@ export default class Tab_card {
         img.setAttribute("alt", "Exit button image.");
         img.setAttribute("width", "580");
         img.setAttribute("height", "auto");
+        media.append(img);
       }
       if (this.props.mediaType === "video") {
         media = document.createElement("video");

@@ -1,0 +1,34 @@
+@use "variables" as v;
+
+.tabCard {
+  background-color: v.$tab-bg-color;
+  padding: v.$padding-2;
+  width: min(600px, 100%);
+  min-height: 500px;
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: v.$margin-1;
+
+    .cardTitle {
+      border-bottom: v.$border-global;
+      text-transform: uppercase;
+      letter-spacing: v.$letter-spacing-global;
+    }
+  }
+  .cardMedia {
+    height: 300px;
+    margin-bottom: v.$margin-2;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .cardExitButton img {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -52,13 +52,16 @@ export default class Tab_card {
         media.append(img);
       }
       if (this.props.mediaType === "video") {
+        console.log("video taip");
         media = document.createElement("video");
         media.setAttribute("class", "cardMedia");
+        media.setAttribute("autoplay", "autoplay");
+
         const source = document.createElement("source");
         source.setAttribute("src", this.props.mediaUrl);
         source.setAttribute("type", "video/mp4");
         const text = document.createTextNode("Your browser does not support the video.");
-        media.append(text);
+        media.append(source, text);
       }
       cardMain.append(media);
     }

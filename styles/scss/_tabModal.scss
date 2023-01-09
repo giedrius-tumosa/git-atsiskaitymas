@@ -1,0 +1,11 @@
+@use "variables" as v;
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  background-color: v.$modal-bg-color;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  padding-block: 1rem;
+}

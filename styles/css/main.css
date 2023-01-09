@@ -22,7 +22,7 @@ ul {
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
   background-image: url("../../images/bg.jpg");
@@ -162,4 +162,65 @@ body::after {
   .main .main_nav-section .main_navigation ul li {
     flex: 1;
   }
+}
+
+.tabCard {
+  background-color: rgba(28, 32, 35, 0.9294117647);
+  padding: 2rem;
+  width: min(600px, 100% - 1rem);
+  min-height: 500px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+.tabCard .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.tabCard .cardHeader .cardTitle {
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.tabCard .cardMedia {
+  height: 300px;
+  margin-bottom: 2rem;
+}
+.tabCard .cardMedia img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tabCard .cardExitButton img {
+  width: 30px;
+  height: 30px;
+}
+.tabCard .cardExitButton {
+  transition: transform 0.2s linear;
+}
+.tabCard .cardExitButton:hover {
+  transform: rotate(90deg);
+}
+
+@media (min-width: 425px) {
+  .tabCard {
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
+}
+.modal-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 25, 25, 0.4745098039);
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  padding-block: 1rem;
 }/*# sourceMappingURL=main.css.map */

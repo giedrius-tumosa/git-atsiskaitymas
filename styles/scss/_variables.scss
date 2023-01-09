@@ -3,7 +3,7 @@
 $clr-100: #fff;
 $clr-150: #ffffff34;
 $clr-300: #bcbcbc;
-$clr-400: #1c2023bf;
+$clr-400: #1c2023ed;
 $clr-500: #19191979;
 
 // Backgrounds
@@ -12,6 +12,7 @@ $page-bg-img: url("../../images/bg.jpg");
 $page-bg-overlay: url("../../images/bg-overlay.png");
 $page-bg-dark: $clr-500;
 $tab-bg-color: $clr-400;
+$modal-bg-color: $clr-500;
 
 // Fonts
 
@@ -25,6 +26,7 @@ $font-weight-regular: 400;
 $font-weight-bolder: 700;
 $font-weight-bold: 900;
 
+$letter-spacing-global: 3px;
 // Buttons
 
 $button-hover-color: $clr-150;
@@ -34,6 +36,7 @@ $button-hover-color: $clr-150;
 $padding-inline-global: 1rem;
 $padding-2: 2rem;
 $padding-3: 3rem;
+$margin-1: 1rem;
 $margin-2: 2rem;
 $margin-3: 3rem;
 

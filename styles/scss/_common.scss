@@ -2,7 +2,7 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-family: v.$font-family-global;
   color: v.$font-global-color;
   background-image: v.$page-bg-img;

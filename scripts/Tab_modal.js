@@ -10,9 +10,11 @@ export default class Tab_modal {
     const modalBackground = document.createElement("div");
     modalBackground.setAttribute("class", "modal-background");
 
+    const body = document.querySelector("body");
+
     const card = new Tab_card(this.cardData);
     modalBackground.append(card);
-    pageWrapper.append(modalBackground);
+    body.append(modalBackground);
 
     // const widthBefore = document.querySelector("html").getBoundingClientRect().width;
 

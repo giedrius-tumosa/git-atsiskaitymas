@@ -4,10 +4,10 @@
   background-color: v.$tab-bg-color;
   padding: v.$padding-2;
   width: min(600px, 100% - 1rem);
-  min-height: 500px;
+  min-height: 90%;
   z-index: 10;
   position: absolute;
-  top: 0;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   margin: 0 auto;
@@ -57,5 +57,6 @@
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+    min-height: 600px;
   }
 }

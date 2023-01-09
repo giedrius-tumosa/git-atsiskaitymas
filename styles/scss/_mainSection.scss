@@ -9,6 +9,7 @@
     border-top: v.$border-global;
     border-bottom: v.$border-global;
     padding-bottom: v.$padding-2;
+    min-height: 200px;
 
     h1 {
       margin-block: v.$margin-2 v.$margin-3;
@@ -16,6 +17,7 @@
     }
     p {
       font-size: 0.8rem;
+      font-weight: v.$font-weight-thin;
 
       a:any-link {
         color: v.$font-global-color;
@@ -24,6 +26,57 @@
       }
       a:hover {
         color: v.$link-hover-color;
+      }
+    }
+  }
+
+  .main_nav-section {
+    $nav-top-pos: v.$padding-3;
+    padding-top: $nav-top-pos;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: $nav-top-pos;
+      background-color: v.$border-global-color;
+      position: absolute;
+      top: 0;
+    }
+    .main_navigation {
+      width: min(600px, 100%);
+    }
+    .main_navigation ul {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        display: block;
+        width: 100%;
+        height: 40px;
+        border: v.$border-global;
+        background-color: #ffffff00;
+        color: v.$font-global-color;
+        font-weight: v.$font-weight-thin;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 3px;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: v.$button-hover-color;
+          cursor: pointer;
+        }
+      }
+
+      @media (min-width: 678px) {
+        flex-direction: row;
+
+        li {
+          flex: 1;
+        }
       }
     }
   }

@@ -1,7 +1,7 @@
 // Colors
 
 $clr-100: #fff;
-$clr-150: #ffffff72;
+$clr-150: #ffffff34;
 $clr-300: #bcbcbc;
 $clr-400: #1c2023bf;
 $clr-500: #19191979;
@@ -20,6 +20,11 @@ $link-hover-color: $clr-300;
 $font-family-global: "Nunito Sans", sans-serif;
 $line-height-global: 1.5;
 
+$font-weight-thin: 300;
+$font-weight-regular: 400;
+$font-weight-bolder: 700;
+$font-weight-bold: 900;
+
 // Buttons
 
 $button-hover-color: $clr-150;
@@ -28,6 +33,7 @@ $button-hover-color: $clr-150;
 
 $padding-inline-global: 1rem;
 $padding-2: 2rem;
+$padding-3: 3rem;
 $margin-2: 2rem;
 $margin-3: 3rem;
 

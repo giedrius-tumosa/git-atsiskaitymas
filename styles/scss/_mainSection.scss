@@ -1,0 +1,30 @@
+@use "variables" as v;
+
+.main {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  .main_hero {
+    border-top: v.$border-global;
+    border-bottom: v.$border-global;
+    padding-bottom: v.$padding-2;
+
+    h1 {
+      margin-block: v.$margin-2 v.$margin-3;
+      font-size: 1.7rem;
+    }
+    p {
+      font-size: 0.8rem;
+
+      a:any-link {
+        color: v.$font-global-color;
+        border-bottom: 1px dotted v.$border-global-color;
+        display: inline-block;
+      }
+      a:hover {
+        color: v.$link-hover-color;
+      }
+    }
+  }
+}

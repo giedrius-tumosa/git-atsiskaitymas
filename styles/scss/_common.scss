@@ -8,6 +8,7 @@ body {
   background-image: v.$page-bg-img;
   background-size: cover;
   background-position: center;
+  line-height: v.$line-height-global;
 
   &::after {
     content: "";
@@ -21,9 +22,6 @@ body {
     left: 0;
     z-index: 1;
   }
-}
-#page_wrapper > * {
-  border: 1px solid purple;
 }
 #page_wrapper {
   width: 100%;

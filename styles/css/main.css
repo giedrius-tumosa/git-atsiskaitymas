@@ -28,6 +28,7 @@ body {
   background-image: url("../../images/bg.jpg");
   background-size: cover;
   background-position: center;
+  line-height: 1.5;
 }
 body::after {
   content: "";
@@ -40,10 +41,6 @@ body::after {
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-#page_wrapper > * {
-  border: 1px solid purple;
 }
 
 #page_wrapper {
@@ -81,4 +78,40 @@ body::after {
   background-color: #fff;
   position: absolute;
   bottom: 0;
+}
+
+.main {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.main .main_hero {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2rem;
+}
+.main .main_hero h1 {
+  margin-block: 2rem 3rem;
+  font-size: 1.7rem;
+}
+.main .main_hero p {
+  font-size: 0.8rem;
+}
+.main .main_hero p a:-webkit-any-link {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  display: inline-block;
+}
+.main .main_hero p a:-moz-any-link {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  display: inline-block;
+}
+.main .main_hero p a:any-link {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  display: inline-block;
+}
+.main .main_hero p a:hover {
+  color: #bcbcbc;
 }/*# sourceMappingURL=main.css.map */

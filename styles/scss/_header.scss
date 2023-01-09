@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+.header {
+  $figure-bottom-pos: 50px;
+
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+
+  .gem_figure {
+    width: 100px;
+    height: 100px;
+    border: v.$border-global;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    bottom: $figure-bottom-pos;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 1px;
+    height: $figure-bottom-pos;
+    background-color: v.$border-global-color;
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,5 +1,5 @@
 import { tabData } from "./data.js";
-import Tab_modal from "./Tab_modal.js";
+import TabModal from "./TabModal.js";
 
 const mainNavButtons = document.querySelectorAll(".main_navigation button");
 
@@ -10,6 +10,6 @@ mainNavButtons.forEach(btn => {
     currentModal ? currentModal.remove() : null;
     // New modal
     const cardData = tabData.filter(el => btn.id === el.title);
-    const modal = new Tab_modal(cardData[0]);
+    const modal = new TabModal(cardData[0]);
   });
 });

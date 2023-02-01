@@ -1,6 +1,6 @@
-import Tab_card from "./Tab_card.js";
+import TabCard from "./TabCard.js";
 
-export default class Tab_modal {
+export default class TabModal {
   constructor(cardData) {
     this.cardData = cardData;
     return this.render();
@@ -12,7 +12,7 @@ export default class Tab_modal {
 
     const body = document.querySelector("body");
 
-    const card = new Tab_card(this.cardData);
+    const card = new TabCard(this.cardData);
     modalBackground.append(card);
     body.append(modalBackground);
 

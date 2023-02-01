@@ -1,4 +1,4 @@
-export default class Tab_card {
+export default class TabCard {
   constructor(props) {
     this.props = props;
     return this.render();

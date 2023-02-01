@@ -29,7 +29,7 @@ export default class TabCard {
     cardExitButton.setAttribute("class", "cardExitButton");
 
     let img = document.createElement("img");
-    img.setAttribute("src", "../images/xmark-solid.svg");
+    img.setAttribute("src", "./images/xmark-solid.svg");
     img.setAttribute("alt", "Exit button image.");
     img.setAttribute("width", "30");
     img.setAttribute("height", "30");
